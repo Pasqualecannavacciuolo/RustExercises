@@ -47,7 +47,7 @@ fn remove_duplicate_tuples<'v>(vector_of_tuples: Vec<(&'v i32,&'v i32)>)-> Vec<(
     let mut output:Vec<(&i32,&i32)> = Vec::new();
 
     for (_pos1, e1) in _unique_data.to_vec().iter().enumerate() {
-        for (_pos2, e2) in _unique_data.to_vec().iter().enumerate() {
+        for (_pos2, _e2) in _unique_data.to_vec().iter().enumerate() {
             if !output.contains(e1) {
                 output.push(*e1);
             }
